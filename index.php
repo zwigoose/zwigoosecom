@@ -10,7 +10,7 @@
     <body>
         <div id="time">
             <?php
-                include 'timetest.php';
+                include 'include/timetest.php';
                 print("<br><br>");
             ?>
 
@@ -18,7 +18,7 @@
         </div>
 
         <h1>Links</h1>
-        <a href="/files.php">File Management</a>
+        <a href="files.php">File Management</a>
         <a href="http://www.reddit.com/u/zwigoose">Reddit</a>
         <a href="http://www.facebook.com/andrew.c.ferrari">Facebook</a>
         <a href="http://www.twitter.com/zwigoose">Twitter</a>
