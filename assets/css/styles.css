@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left:50%;
+    margin-left:-100px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#time {
+    /* This is where you can stylize the clock */
+}
