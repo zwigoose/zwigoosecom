@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script>
 function startTime()
 {
 var today=new Date();
@@ -23,10 +19,3 @@ if (i<10)
   }
 return i;
 }
-</script>
-</head>
-
-<body onload="startTime()">
-<div id="txt"></div>
-</body>
-</html>

@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Zwigoose</title>
+    <head>
+        <title>Zwigoose</title>
+        <link rel="icon" type="image/ico" href="assets/img/goose.ico">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script type="text/javascript" src="assets/js/scriptclock.js"></script>
+    <head>
 
-<!--STYLE SECTION-->
-<style>
-body {
-    font-family: sans-serif;
-}
-.footer {
-    position: fixed;
-    bottom: 0;
-    left:50%;
-    margin-left:-100px;
-    text-align: center;
-    padding-bottom: 10px;
-}
+    <body>
+        <div id="time">
+            <?php
+                include 'timetest.php';
+                print("<br><br>");
+            ?>
 
-</style>
-<!--END STYLE-->
+            <body onload="startTime()">
+        </div>
 
+        <h1>Links</h1>
+        <a href="/files.php">File Management</a>
+        <a href="http://www.reddit.com/u/zwigoose">Reddit</a>
+        <a href="http://www.facebook.com/andrew.c.ferrari">Facebook</a>
+        <a href="http://www.twitter.com/zwigoose">Twitter</a>
+        <a href="mailto:andrew@zwigoose.com">Email Me</a>
 
-<head>
-<link rel="icon"
-    type="image/ico"
-    href="/goose.ico">
-
-<!--START BODY-->
-<body>
-
-<?php
-include 'timetest.php';
-include 'scriptclock.html';
-print("<br>");
-?>
-
-<h1>Links</h1>
-<a href="/files.php">File Management</a>
-<a href="http://www.reddit.com/u/zwigoose">Reddit</a>
-<a href="http://www.facebook.com/andrew.c.ferrari">Facebook</a>
-<a href="http://www.twitter.com/zwigoose">Twitter</a>
-<a href="mailto:andrew@zwigoose.com">Email Me</a>
-
-<div class="footer">
-<?php
-print "<br>&copy; 2012-" . date('Y') . " Andrew Ferrari";
-?>
-</div>
-
-</body>
-<!--CLOSE BODY-->
-
+        <div class="footer">
+            <?php
+            print "<br>&copy; 2012-" . date('Y') . " Andrew Ferrari";
+            ?>
+        </div>
+    </body>
 </html>
