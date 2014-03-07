@@ -1,3 +1,4 @@
+# This enables mod_deflate (basically gzip) Makes the site faster.
 <ifModule mod_deflate.c>
     <filesMatch "\.(js|css|html|php)$">
         SetOutputFilter DEFLATE
